@@ -27,7 +27,7 @@ This repository contains an example of a custom provider, `MyCustomProvider`, wh
 
 ### Testing the provider
 
-Run the following commands to test the provider
+Run the following commands to test the custom provider ([MyCustomProvider](https://github.com/feast-dev/feast-custom-provider-demo/blob/master/feast_custom_provider/custom_provider.py))
 
 ```bash
 pip install -r requirements.txt
