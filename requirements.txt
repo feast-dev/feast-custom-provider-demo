@@ -1,0 +1,2 @@
+feast_custom_provider/
+pytest==6.2.4
