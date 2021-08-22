@@ -1,4 +1,5 @@
 # Feast Custom Provider
+[![test-provider](https://github.com/feast-dev/feast-custom-provider-demo/actions/workflows/test_provider.yml/badge.svg?branch=master)](https://github.com/feast-dev/feast-custom-provider-demo/actions/workflows/test_provider.yml)
 
 ### Overview
 
