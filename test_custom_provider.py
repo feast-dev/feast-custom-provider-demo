@@ -22,3 +22,7 @@ def test_end_to_end():
 
     # tear down feature store
     fs.teardown()
+
+def test_cli():
+    import os
+    os.system('PYTHONPATH=$PYTHONPATH:/$(pwd) feast -c basic_feature_repo apply')

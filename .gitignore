@@ -1,3 +1,5 @@
 .idea
 *.pyc
 **__pycache__
+basic_feature_repo/online_store.db
+basic_feature_repo/registry.db
