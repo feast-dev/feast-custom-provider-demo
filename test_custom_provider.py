@@ -1,6 +1,8 @@
+import os
 from datetime import datetime
 
 from feast import FeatureStore
+
 from basic_feature_repo.repo import driver, driver_hourly_stats_view
 
 
@@ -23,6 +25,15 @@ def test_end_to_end():
     # tear down feature store
     fs.teardown()
 
+
 def test_cli():
-    import os
-    os.system('PYTHONPATH=$PYTHONPATH:/$(pwd) feast -c basic_feature_repo apply')
+    os.system(
+        "PYTHONPATH=$PYTHONPATH:/$(pwd) feast -c basic_feature_repo apply > output"
+    )
+    with open("output", "r") as f:
+        output = f.read()
+
+    if "Launching custom streaming jobs is pretty easy" not in output:
+        raise Exception(
+            'Failed to successfully use provider from CLI. See "output" for more details.'
+        )
