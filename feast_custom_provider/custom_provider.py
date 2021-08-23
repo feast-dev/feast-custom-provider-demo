@@ -17,7 +17,7 @@ from tqdm import tqdm
 class MyCustomProvider(LocalProvider):
     def __init__(self, config: RepoConfig, repo_path):
         super().__init__(config)
-        # Add your custom init code here. This code runs on every
+        # Add your custom init code here. This code runs on every feast operation.
 
     def update_infra(
         self,
